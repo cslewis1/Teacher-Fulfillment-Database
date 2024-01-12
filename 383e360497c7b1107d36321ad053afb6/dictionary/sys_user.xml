@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.text_index_translations=true,display_image=photo,global_search_config_handler=UserConfig,ih_process_sync_enabled=true,iterativeDelete=true,metadata_link_exempt=true,ref_ac_columns=email,ref_ac_columns_search=true,ref_ac_order_by=name,ref_auto_completer=AJAXTableCompleter" create_roles="user_admin" db_object_id="94991f03b4232110320f8dc279c80457" defaultsort="-1" dynamic_creation_script="dynamicUserCreation(current, value);" label="User" max_length="40" name="sys_user" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="x_1138040_teacher_status" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Subject" max_length="40" name="x_1138040_teacher_subject" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Role" max_length="40" name="x_1138040_teacher_role" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Principle" sequence="0" value="Principle"/>
+                <element inactive_on_update="false" label="Teacher" sequence="1" value="Teacher"/>
+                <element inactive_on_update="false" label="Substitute Teacher" sequence="2" value="Substitute Teacher"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="School Name" max_length="40" name="x_1138040_teacher_school_name" type="string"/>
+    </element>
+</database>
